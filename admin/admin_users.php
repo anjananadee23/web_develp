@@ -3,6 +3,7 @@
 <head>
     <title>Users</title>
     <link rel="stylesheet" href="./../css/admin_users.css">
+    <link rel="icon" href="./../images/logo1.png">
 </head>
 <body>
 

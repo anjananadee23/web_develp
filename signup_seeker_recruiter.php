@@ -3,6 +3,7 @@
         ?>
         
 <link rel="stylesheet" href="./css/seeker_recruiter.css">
+<link rel="icon" href="./images/logo1.png">
 
     <div class="row">
   

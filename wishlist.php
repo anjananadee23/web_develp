@@ -2,6 +2,7 @@
 <head>
     <title>Wishlist</title>
     <link rel="stylesheet" href="./css/wishlist.css">
+    <link rel="icon" href="./images/logo1.png">
 
 </head>
 

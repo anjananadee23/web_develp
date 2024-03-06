@@ -2,6 +2,7 @@
         include './includes/job.dbh.inc.php';
         ?>
 
+<link rel="icon" href="./images/logo1.png">
 <link rel="stylesheet" href="./css/seeker_recruiter.css">
 <link rel="stylesheet" href="./css/home.css">
 

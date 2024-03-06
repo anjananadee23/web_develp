@@ -8,7 +8,7 @@ if (session_status() === PHP_SESSION_NONE) {
 if (!isset($_SESSION["recid"]) && !isset($_SESSION["userid"])) {
     // User is not logged in, redirect to the login page
     header("Location: login_seeker_recruiter.php");
-    exit(); // Stop further execution
+    exit(); 
 }
 
 // Include the database connection file
@@ -22,11 +22,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $subject = $_POST["subject"];
     $message = $_POST["message"];
 
-    // Determine the user ID based on the session data
+    //user ID based on the session data
     $userId = isset($_SESSION["userid"]) ? $_SESSION["userid"] : null;
     $recId = isset($_SESSION["recid"]) ? $_SESSION["recid"] : null;
 
-    // Prepare the SQL statement to insert data into the contact_us table
+    //SQL statement to insert data into the contact_us table
     $sql = "INSERT INTO Project_db.contact_us (name, email, subject, message, userId, recId) VALUES (?, ?, ?, ?, ?, ?)";
 
     // Prepare the SQL statement

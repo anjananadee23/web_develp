@@ -3,6 +3,7 @@
 <head>
     <title>Admin Contact Us</title>
     <link rel="stylesheet" href="./../css/admin_contact_us.css">
+    <link rel="icon" href="./../images/logo1.png">
     
 </head>
 <body>

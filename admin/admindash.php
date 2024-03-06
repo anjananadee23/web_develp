@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Admin Dashboard</title>
+    <link rel="icon" href="./../images/logo1.png">
 </head>
 <body>
   <?php include("admin_header.php"); ?>
