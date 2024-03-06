@@ -1,0 +1,45 @@
+body {
+    justify-content: center;
+    margin-top: 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./../images/background.png);
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+/* Table */
+table {
+    margin-top: 20px;
+    margin-left: 150px;
+    width: 75%;
+    border-collapse: collapse;
+    background-color: #444;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #4CAF50;
+}
+
+th {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #222;
+}
+
+.recent_jobs a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.recent_jobs a:hover {
+    color: #e90707;
+}

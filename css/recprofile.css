@@ -1,0 +1,97 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #c8e6c9;
+  font-family: Arial, sans-serif;
+}
+
+
+
+a {
+  color: #44d33f;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #da1b1b;
+}
+
+/* Tables */
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #333;
+  color: #fff;
+}
+
+th, td {
+  padding: 2px;
+  text-align: center;
+  border: 1px solid #ffffff;
+}
+
+th {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+tr:hover {
+  background-color: #222;
+}
+
+
+/* Buttons */
+.job-apply-button {
+  background-color: #4caf50;
+  color: #1a1a1a;
+  border: none;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.job-apply-button:hover {
+  background-color: #8bc34a;
+}
+
+/* Recent Jobs Section */
+.recent_jobs {
+  margin-top: 2rem;
+}
+
+/* Forms */
+input[type="text"],
+input[type="password"],
+textarea {
+  background-color: #2b2b2b;
+  border: 1px solid #4caf50;
+  color: #c8e6c9;
+  padding: 0.5rem;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #8bc34a;
+}
+
+button[type="submit"] {
+  background-color: none;
+  color: #1a1a1a;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #ee0505;
+}
