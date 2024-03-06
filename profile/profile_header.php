@@ -69,10 +69,18 @@
     end asid
 -------------------- -->
 <div class="sidebar">
-    <a href="admindash.php">
-        <span class="material-symbols-sharp">grid_view </span>
-        <h2>Dashbord</h2>
-    </a>
+<?php if(isset($_SESSION["userid"])): ?>
+        <a href="seekerprofile.php">
+            <span class="material-symbols-sharp">grid_view </span>
+            <h2>Dashbord</h2> <!-- Display for Seeker -->
+        </a>
+    <?php elseif(isset($_SESSION["recid"])): ?>
+        <a href="recruiterprofile.php">
+            <span class="material-symbols-sharp">grid_view </span>
+            <h2>Dashbord</h2> <!-- Display for Recruiter -->
+        </a>
+        <?php endif; ?>
+
     <?php if(isset($_SESSION["userid"])): ?>
         <a href="./../wishlist.php">
             <span class="material-symbols-sharp">receipt_long </span>

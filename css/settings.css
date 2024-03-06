@@ -1,51 +1,3 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1b1b1b;
-    color: #e0e0e0;
-    margin: 0;
-    padding: 0;
-}
-
-/* Header */
-header {
-    background-color: #2e8b57;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-}
-
-h1, h2 {
-    margin-top: 20px;
-    text-align: center;
-    color: #2e8b57;
-    font-size: 16px;
-}
-
-table {
-    margin-top: 20px ;
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  th, td {
-    padding: 2px;
-    text-align: center;
-    border: 1px solid #ffffff;
-  }
-  
-  th {
-    background-color: #4CAF50;
-    color: #fff;
-  }
-/* Form Styles */
 form {
     margin-top: 20px;
 }
@@ -77,12 +29,4 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #3cb371;
-}
-
-/* Footer */
-footer {
-    background-color: #2e8b57;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
 }

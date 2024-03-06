@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Users</title>
+    <link rel="stylesheet" href="./../css/recprofile.css">
     <link rel="stylesheet" href="./../css/settings.css">
 </head>
 <body>

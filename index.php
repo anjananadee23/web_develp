@@ -20,11 +20,11 @@ include './includes/job.dbh.inc.php';
             <?php endif; ?>  
 
             <?php if(isset($_SESSION["userid"])): ?>
-                <a href="jobcategory.php">
+                <a href="#jobs">
                 <button class="submit" type="button" name="submit"><b>FIND JOB</b></button>
                 </a>
             <?php else: ?>
-                <a href="jobcategory.php">
+                <a href="#jobs">
                 <button class="submit" type="button" name="submit"><b>FIND JOB</b></button>
                 </a>
             <?php endif; ?>  
@@ -40,7 +40,9 @@ include './includes/job.dbh.inc.php';
 <div class="jobCat">
 <?php include 'jobcategory.php';?>
 </div>
+<div id="jobs">
 <?php include 'recentjob.php';?>
+</div>
 <?php include 'footer.php';?>
 
 <script src="js/script.js"></script>

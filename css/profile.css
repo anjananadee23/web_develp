@@ -336,8 +336,7 @@
   main .recent_jobs table{
    font-size: 10px;
    width: 100%;
-   border-radius: var(--card-border-radius);
-   border: 1px solid var(--clr-white);
+   border: 1px solid white;
    padding: var(--card-padding);
    text-align: center;
    box-shadow: var(--box-shadow);
@@ -345,26 +344,20 @@
    color: white;
   }
   
-  
-  
   main .recent_jobs table:hover{
    box-shadow: none;
   }
   
   main table tbody td{
     height: 3.8rem;
-    border: 1px solid var(--clr-white);
+    border: 1px solid white;
     color:white
   }
   
   main table thead th{
     height: 3.8rem;
-    border: 1px solid var(--clr-white);
+    border: 1px solid white;
     color:white
-  }
-  
-  main table tbody tr:last-child td{
-    border: none;
   }
   
   main .recent_jobs a{
