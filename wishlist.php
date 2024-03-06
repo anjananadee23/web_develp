@@ -2,6 +2,7 @@
 <head>
     <title>Wishlist</title>
     <link rel="stylesheet" href="./css/wishlist.css">
+    <link rel="stylesheet" href="./css/wishlist.css">
     <link rel="icon" href="./images/logo1.png">
 
 </head>
@@ -18,6 +19,7 @@ if (!isset($_SESSION['userid'])) {
 include_once './includes/dbh.inc.php'; // Include seeker details database connection
 include_once './includes/job.dbh.inc.php'; // Include job details database connection
 include_once './includes/wishlist.inc.php'; // Include wishlist functions
+
 
 // Check for both GET and POST requests
 if ($_SERVER["REQUEST_METHOD"] == "POST" || $_SERVER["REQUEST_METHOD"] == "GET") {

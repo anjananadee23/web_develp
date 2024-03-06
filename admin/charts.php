@@ -1,11 +1,9 @@
 <?php
-// Include the database connection file
+
 require_once './../includes/job.dbh.inc.php';
 
-// Prepare SQL query to select job categories and their counts
 $sql = "SELECT jobCategory, jobCount FROM job_categories";
 
-// Execute the query
 $result = mysqli_query($conn, $sql);
 
 // Initialize arrays to store labels and data for the chart
@@ -14,14 +12,13 @@ $jobCounts = [];
 
 // Check if there are any rows returned
 if (mysqli_num_rows($result) > 0) {
-    // Loop through each row and populate the arrays
+    
     while ($row = mysqli_fetch_assoc($result)) {
         $jobCategories[] = $row['jobCategory'];
         $jobCounts[] = $row['jobCount'];
     }
 }
 
-// Close the database connection
 mysqli_close($conn);
 ?>
 
@@ -32,6 +29,7 @@ mysqli_close($conn);
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Job Category Chart</title>
+  
   <!-- Include Chart.js library -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>

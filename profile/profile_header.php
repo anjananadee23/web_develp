@@ -88,10 +88,7 @@
             <h2>My Job Details</h2> <!-- Display for Seeker -->
         </a>
     <?php elseif(isset($_SESSION["recid"])): ?>
-        <a href="#">
-            <span class="material-symbols-sharp">receipt_long </span>
-            <h2>Job Applied</h2> <!-- Display for Recruiter -->
-        </a>
+        
     <?php endif; ?>
     <a href="settings.php">
         <span class="material-symbols-sharp">settings </span>

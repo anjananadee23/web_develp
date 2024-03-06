@@ -3,6 +3,7 @@
         ?>
         
 <link rel="stylesheet" href="./css/seeker_recruiter.css">
+<link rel="stylesheet" href="./css/home.css">
 <link rel="icon" href="./images/logo1.png">
 
     <div class="row">
@@ -21,7 +22,6 @@
         </div>
         </a>
     </div>
-    <button type="button">FIND JOB</button>
 </div>
 </div>
 </body>
