@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Execute the statement
     if (mysqli_stmt_execute($stmt)) {
         // Data inserted successfully
-        header("Location: contactus.php?status=success");
+        header("Location: ./../contactus.php?status=success");
         exit();
     } else {
         // Error occurred while inserting data

@@ -1,4 +1,12 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Users</title>
+    <link rel="stylesheet" href="./../css/settings.css">
+    <link rel="icon" href="./../images/logo1.png">
+</head>
+<body>
+    <?php
 
 include("admin_header.php");
 // Include database connection
@@ -54,7 +62,7 @@ if(isset($_GET['id']) && isset($_GET['tab'])) {
             <label for="password">Password:</label>
             <input type="text" name="password" placeholder="New Password"><br>
 
-            <!-- Add more fields as needed -->
+            
             <input type="hidden" name="tab" value="<?php echo $tab; ?>"> <!-- Include tab parameter -->
             <input type="submit" name="update_user" value="Update User">
         </form>
@@ -68,3 +76,8 @@ if(isset($_GET['id']) && isset($_GET['tab'])) {
     echo "<p>Tab parameter is missing.</p>";
 }
 ?>
+</div>
+</body>
+
+<?php include("admin_footer.php"); ?>
+</html>

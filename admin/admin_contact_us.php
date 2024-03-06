@@ -78,7 +78,7 @@ if(isset($_GET['delete_msg'])) {
     // Execute the statement
     if (mysqli_stmt_execute($stmt)) {
         // Message deleted successfully
-        header("Location: contactus.php?status=success");
+        header("Location:?status=success");
         exit();
     } else {
         // Error occurred while deleting message
