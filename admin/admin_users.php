@@ -139,7 +139,7 @@ if ($tab == 'seekers') {
                         echo "<td>
                                 <a href='edit_user.php?id=".$row[$idColumn]."&tab=".$tab."'>Update</a>
                                 <a href='?delete_user=".$row[$idColumn]."&tab=".$tab."'>Delete</a>
-                                <a href='view_user.php?id=".$row[$idColumn]."&tab=".$tab."'>Details</a>
+                             
                             </td>";
                         echo "</tr>";
                     }
