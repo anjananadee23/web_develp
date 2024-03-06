@@ -3,6 +3,7 @@
 <head>
     <title>Users</title>
     <link rel="stylesheet" href="./../css/admin_users.css">
+    <link rel="stylesheet" href="./../css/admin.css">
     <link rel="icon" href="./../images/logo1.png">
 </head>
 <body>
@@ -149,7 +150,8 @@ if ($tab == 'seekers') {
             </tbody>
         </table>
     </div>
+            </div>
 </main>
 </body>
-<?php include("./../footer.php"); ?>
+<?php include("admin_footer.php"); ?>
 </html>
