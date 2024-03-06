@@ -14,7 +14,7 @@ body {
 .loginbox img {
     height: 210px; 
     width: 200px; 
-    padding: 8px;
+    padding: 1px;
     opacity: 1;
 }
 
@@ -108,4 +108,5 @@ label {
     z-index: 1;
     position: relative;
 }
+
 

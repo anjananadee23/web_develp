@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Users</title>
+    <title>Account Settings</title>
     <link rel="stylesheet" href="./../css/recprofile.css">
     <link rel="stylesheet" href="./../css/settings.css">
+    <link rel="icon" href="./../images/logo1.png">
 </head>
 <body>
     <?php
@@ -114,5 +115,5 @@ include("profile_header.php");
 </body>
 </html>
 
-<?phpinclude("./pro_footer.php");
+<?php include("./pro_footer.php");
 ?>

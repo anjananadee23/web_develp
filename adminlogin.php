@@ -15,8 +15,8 @@
     <div class="loginbox">
             <img src="./images/logo.png" alt="Logo">
             <br>
+            
         <font style="font-family: 'Bahnschrift', sans-serif; font-size: 30px; color: white;"><b>ADMIN SIGN IN</b></font>
-
         
         <form action="./includes/admin.login.inc.php" method="post">
             

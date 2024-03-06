@@ -24,10 +24,11 @@
         <nav>
             <ul>
                 <li><a class="tab active" href="./../index.php">Home</a></li>
-                <li><a class="tab" href="./../aboutus.php">About Us</a></li>
-                <li><a class="tab" href="./../contactus.php">Contact Us</a></li>
-                <li><a class="tab" href="./../faq.php">Help</a></li>
-                <li><a class="tab" href="./../adminlogin.php">Administration</a></li>
+                <li><a href="./../index.php#jobs">Jobs</a></li>
+                <li><a href="./../aboutus.php">About Us</a></li>
+                <li><a href="./../contactus.php">Contact Us</a></li>
+                <li><a href="./../faq.php">Help</a></li>
+                <li><a href="./../adminlogin.php">Administration</a></li>
             </ul>
         </nav>
 
