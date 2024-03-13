@@ -1,13 +1,3 @@
-<html>
-<head>
-    <title>Wishlist</title>
-    <link rel="stylesheet" href="./css/wishlist.css">
-    <link rel="stylesheet" href="./css/wishlist.css">
-    <link rel="icon" href="./images/logo1.png">
-
-</head>
-
-<body>
     <?php
 session_start();
 
@@ -16,9 +6,10 @@ if (!isset($_SESSION['userid'])) {
     exit();
 }
 
-include_once './includes/dbh.inc.php'; // Include seeker details database connection
-include_once './includes/job.dbh.inc.php'; // Include job details database connection
-include_once './includes/wishlist.inc.php'; // Include wishlist functions
+include_once './../includes/dbh.inc.php'; // Include seeker details database connection
+include_once './../includes/job.dbh.inc.php'; // Include job details database connection
+include_once './../includes/wishlist.inc.php'; // Include wishlist functions
+include_once './profile_header.php';
 
 
 // Check for both GET and POST requests
@@ -48,13 +39,26 @@ if (isset($_GET['job_Id'])) {
 }
 
 // Fetch saved jobs from the wishlist
-$savedJobs = getSavedJobs($_SESSION['userid']);
+$savedJobs = getSavedJobs($_SESSION['userid']); ?>
 
-// Display saved jobs
-echo "<h2>Saved Jobs</h2>";
-echo "<table border='1'>";
-echo "<tr><th>Job Title</th><th>Job Category</th><th>Job Type</th><th>Employment Status</th><th>Salary</th><th>Job Location</th><th>Action</th></tr>";
-foreach ($savedJobs as $job) {
+<html>
+<head>
+    <title>Wishlist</title>
+    <link rel="stylesheet" href="./../css/wishlist.css">
+    <link rel="stylesheet" href="./../css/home.css">
+    <link rel="icon" href="./../images/logo1.png">
+
+</head>
+
+<body>
+
+    <main>
+
+<h1>Saved Jobs</h1>
+
+<table border='1'>
+<tr><th>Job Title</th><th>Job Category</th><th>Job Type</th><th>Employment Status</th><th>Salary</th><th>Job Location</th><th>Company Name</th><th>Action</th></tr>
+<?php foreach ($savedJobs as $job) {
     echo "<tr>";
     echo "<td>{$job['jobTitle']}</td>";
     echo "<td>{$job['jobCategory']}</td>";
@@ -62,15 +66,25 @@ foreach ($savedJobs as $job) {
     echo "<td>{$job['empStatus']}</td>";
     echo "<td>{$job['salary']}</td>";
     echo "<td>{$job['jobLoc']}</td>";
+    echo "<td>{$job['companyName']}</td>";
     echo "<td>";
     echo "<a href='job_app_form.php?job_Id={$job['jobId']}'>Apply</a> | "; // Apply button with redirection to job_app_form.php
     echo "<a href='wishlist.php?job_Id={$job['jobId']}&action=remove'>Remove</a>"; // Remove button
     echo "</td>";
     echo "</tr>";
 }
-echo "</table>";
-
-mysqli_close($conn);
 ?>
+
+</table>
+</div>
+</div>
+</main>
+
+<?php include("./pro_footer.php"); ?>
+
 </body>
 </html>
+
+<?php mysqli_close($conn);
+?>
+

@@ -63,6 +63,7 @@ include("profile_header.php");
 <main>
     <h1>Settings</h1>
     <h2><?php echo $userType; ?> Details</h2>
+    <br>
     <table>
         <tr>
             <th>Attribute</th>
@@ -82,6 +83,7 @@ include("profile_header.php");
             <?php endif; ?>
         <?php endforeach; ?>
     </table>
+    <br>
     <h2>Update Details</h2>
     <form id="update_form" action="./../includes/<?php echo $updateFile; ?>" method="post"> <!-- Updated form action -->
         <input type="hidden" name="userId" value="<?php echo $userId; ?>"> <!-- Include userId as a hidden field -->
@@ -89,9 +91,9 @@ include("profile_header.php");
         
         <!-- Include fields for updating common details -->
         <label for="new_first_name">New First Name:</label>
-        <input type="text" id="new_first_name" name="firstName" placeholder="<?php echo isset($userData['first_name']) ? $userData['first_name'] : ''; ?>">
+        <input type="text" id="new_first_name" name="firstName" placeholder="<?php echo isset($userData['firstName']) ? $userData['firstName'] : ''; ?>">
         <label for="new_last_name">New Last Name:</label>
-        <input type="text" id="new_last_name" name="lastName" placeholder="<?php echo isset($userData['last_name']) ? $userData['last_name'] : ''; ?>">
+        <input type="text" id="new_last_name" name="lastName" placeholder="<?php echo isset($userData['lastName']) ? $userData['lastName'] : ''; ?>">
         <label for="new_password">New Password:</label>
         <input type="text" id="new_password" name="newPassword" placeholder="Enter New Password">
 
@@ -101,9 +103,9 @@ include("profile_header.php");
             <input type="text" id="new_address" name="address" placeholder="<?php echo isset($userData['address']) ? $userData['address'] : ''; ?>">
         <?php elseif ($tableName === "recruiter_data"): ?>
             <label for="new_company_name">New Company Name:</label>
-            <input type="text" id="new_company_name" name="companyName" placeholder="<?php echo isset($userData['company_name']) ? $userData['company_name'] : ''; ?>">
+            <input type="text" id="new_company_name" name="companyName" placeholder="<?php echo isset($userData['companyName']) ? $userData['companyName'] : ''; ?>">
             <label for="new_company_address">New Company Address:</label>
-            <input type="text" id="new_company_address" name="comAddress" placeholder="<?php echo isset($userData['contact_person']) ? $userData['contact_person'] : ''; ?>">
+            <input type="text" id="new_company_address" name="comAddress" placeholder="<?php echo isset($userData['comAddress']) ? $userData['comAddress'] : ''; ?>">
         <?php endif; ?>
         
         <!-- Add more fields for other information to be updated -->

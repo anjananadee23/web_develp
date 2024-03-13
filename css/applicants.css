@@ -6,13 +6,13 @@ body {
   }
   
   /* Headings */
-  h1, h2, h3, h4, h5, h6 {
-    color: #73c67a;
+  h2 {
+    color: white;
   }
   
   /* Links */
   a {
-    color: #73c67a;
+    color: #ffffff;
     text-decoration: none;
   }
   
@@ -46,7 +46,7 @@ body {
   
   /* Buttons */
   button {
-    background-color: #73c67a;
+    background-color: #ffffff;
     color: #1c1c1c;
     padding: 10px 20px;
     border: none;

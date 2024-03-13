@@ -67,7 +67,7 @@ if(isset($_GET['job_Id'])) {
         if (isset($_SESSION["userid"])) {
             echo "<form id='saveForm' method='post' action='wishlist.php?action=save'>";
             echo "<input type='hidden' name='job_Id' value='$job_Id'>";
-            echo "<button class='submit' type='submit' name='save_job'><b>Save</b></button>"; // Change button type to submit
+            echo "<button class='submit' type='submit' name='save_job'><b>SAVE</b></button>"; // Change button type to submit
             echo "</form>";
 
             echo "<a href='job_app_form.php?job_Id=$job_Id'>";
@@ -82,7 +82,7 @@ if(isset($_GET['job_Id'])) {
 
             $_SESSION['redirect_url'] = "../job_details.php?job_Id=$job_Id"; // Store complete URL with job_Id
             echo "<a href='seekerlogin.php'>";
-            echo "<button class='submit' type='submit' name='save_job'><b>Save</b></button>";
+            echo "<button class='submit' type='submit' name='save_job'><b>SAVE</b></button>";
             echo "</a>";
         }
 

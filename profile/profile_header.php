@@ -39,7 +39,7 @@
     $wishlistPage = ""; // Add wishlist page variable
     if (isset($_SESSION["userid"])) {
         $profilePage = "seekerprofile.php";
-        $wishlistPage = "./../wishlist.php"; // Define wishlist page for seeker
+        $wishlistPage = "./wishlist.php"; // Define wishlist page for seeker
     } elseif (isset($_SESSION["recid"])) {
         $profilePage = "recruiterprofile.php";
     }
@@ -83,7 +83,7 @@
         <?php endif; ?>
 
     <?php if(isset($_SESSION["userid"])): ?>
-        <a href="./../wishlist.php">
+        <a href="./wishlist.php">
             <span class="material-symbols-sharp">receipt_long </span>
             <h2>My Job Details</h2> <!-- Display for Seeker -->
         </a>

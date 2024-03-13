@@ -8,28 +8,21 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8)),url(./../images/background.png);
 }
 
-/* Header */
-header {
-    background-color: #2e8b57;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-}
-
 /* Main Content */
 main {
     padding: 20px;
 }
 
 h2 {
-    color: #2e8b57;
+    color: white;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 table {
-    margin-left: 80px;
+    margin-top: 5%;
+    margin-left: 5%;
     width: 80%;
     border-collapse: collapse;
     background-color: #333;
