@@ -23,7 +23,7 @@ h2 {
 table {
     margin-top: 5%;
     margin-left: 5%;
-    width: 80%;
+    width: 100%;
     border-collapse: collapse;
     background-color: #333;
     color: #fff;
@@ -36,7 +36,7 @@ table {
   }
   
   th {
-    background-color: #4CAF50;
+    background-color: #165718;
     color: #fff;
   }
 

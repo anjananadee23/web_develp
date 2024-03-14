@@ -40,6 +40,7 @@ include("profile_header.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>seeker Profile</title>
     <link rel="stylesheet" href="./../css/recprofile.css">
+
 </head>
 <body>
     <main>
@@ -47,12 +48,29 @@ include("profile_header.php");
     <h1>Seeker Profile</h1>
     <p>Username: <?php echo ($seekerUsername); ?></p>
     <p>First Name: <?php echo ($seekerFirstName); ?></p>
+
+    <center>
+
+            <h2>Hello <?php echo isset($_SESSION["fname"]) ? $_SESSION["fname"] . ' !' : 'User!'; ?></h2>
+            <br>
+            <p>"Welcome to HOT JOB !!! "</p>
+            <br> 
+
+            <?php if(isset($_SESSION["userid"])): ?>
+                <a href="./../#jobs">
+                <button class="submit" type="button" name="submit"><b>FIND JOB</b></button>
+                </a>
+            <?php else: ?>
+                <a href="./../#jobs">
+                <button class="submit" type="button" name="submit"><b>FIND JOB</b></button>
+                </a>
+            <?php endif; ?>  
     
-
-
+    </center>
     <!-- Add more sections or forms for other profile management features -->
 
     <script src="./js/admindash.js"></script>
+            </div>
 </div>
 </main>
 </body>

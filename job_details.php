@@ -65,7 +65,7 @@ if(isset($_GET['job_Id'])) {
         
         // Display "APPLY" button based on user login status
         if (isset($_SESSION["userid"])) {
-            echo "<form id='saveForm' method='post' action='wishlist.php?action=save'>";
+            echo "<form id='saveForm' method='post' action='./profile/wishlist.php?action=save'>";
             echo "<input type='hidden' name='job_Id' value='$job_Id'>";
             echo "<button class='submit' type='submit' name='save_job'><b>SAVE</b></button>"; // Change button type to submit
             echo "</form>";

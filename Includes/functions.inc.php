@@ -198,8 +198,8 @@ function loginRecruiter($conn, $username, $password){
 // In your login function
 function loginAdmin($conn, $username, $password) {
     // Hardcoded admin credentials
-    $adminUsername = 'admin';
-    $adminPassword = '1234';
+    $adminUsername = 'uoc';
+    $adminPassword = 'ucsc';
 
     // Check if provided credentials match admin credentials
     if ($username === $adminUsername && $password === $adminPassword) {

@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" || $_SERVER["REQUEST_METHOD"] == "GET")
         // Add job to wishlist
         $job_Id = $_REQUEST['job_Id'];
         if (addToWishlist($_SESSION['userid'], $job_Id)) {
-            echo "Job successfully added to wishlist.";
+            
         } else {
             echo "Error adding job to wishlist.";
         }
@@ -31,7 +31,7 @@ if (isset($_GET['job_Id'])) {
     if (isset($_GET['action']) && $_GET['action'] === 'remove') {
         // Remove job from wishlist
         if (removeFromWishlist($_SESSION['userid'], $job_Id)) {
-            echo "Job successfully removed from wishlist.";
+            
         } else {
             echo "Error removing job from wishlist.";
         }
@@ -68,7 +68,7 @@ $savedJobs = getSavedJobs($_SESSION['userid']); ?>
     echo "<td>{$job['jobLoc']}</td>";
     echo "<td>{$job['companyName']}</td>";
     echo "<td>";
-    echo "<a href='job_app_form.php?job_Id={$job['jobId']}'>Apply</a> | "; // Apply button with redirection to job_app_form.php
+    echo "<a href='job_app_form.php?job_Id={$job['jobId']}'>Apply</a> <br>"; // Apply button with redirection to job_app_form.php
     echo "<a href='wishlist.php?job_Id={$job['jobId']}&action=remove'>Remove</a>"; // Remove button
     echo "</td>";
     echo "</tr>";

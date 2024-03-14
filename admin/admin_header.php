@@ -78,7 +78,7 @@ if (!isset($_SESSION["admin"])) {
               <h3>Messages</h3>
               <span class="msg_count">(<?php echo $totalMsg; ?>)</span>
            </a>
-           <a href="./../includes/job_category_count.inc.php">
+           <a href="./job_category_count.inc.php">
               <span class="material-symbols-sharp">receipt_long </span>
               <h3>Jobs</h3>
 

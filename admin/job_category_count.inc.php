@@ -2,14 +2,23 @@
 <html>
 <head>
     <title>Job Category Count</title>
-    <link rel="stylesheet" href="./../css/job_category_count.css">
+    
+    <link rel="stylesheet" href="./../css/recprofile.css">
+    <link rel="stylesheet" href="./../css/home.css">
+    <link rel="stylesheet" href="./../css/footer.css">
+    <link rel="icon" href="./../images/logo1.png">
+   
+
 </head>
 <body>
 
+
+
     <?php
 
+require_once 'admin_header.php';
 // Include the database connection file
-require_once 'job.dbh.inc.php';
+require_once './../includes/job.dbh.inc.php';
 
 // Prepare SQL query to update jobCount in job_categories table
 $updateSql = "UPDATE job_categories jc
@@ -20,7 +29,7 @@ $updateSql = "UPDATE job_categories jc
 
 // Execute the query to update jobCount
 if (mysqli_query($conn, $updateSql)) {
-    echo "<center>Job counts updated successfully.</center>";
+
 } else {
     echo "Error updating job counts: " . mysqli_error($conn);
 }
@@ -54,11 +63,11 @@ if (mysqli_num_rows($result) > 0) {
     echo "No job categories found.";
 }
 
-// Close the database connection
-mysqli_close($conn);
-
 ?>
+<br>
 
-<?php include"./../admin/admin_job.php"; ?>
+<?php include "./../admin/admin_job.php";
+include "./admin_footer.php";  ?>
+
 </body>
 </html>
